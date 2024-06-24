@@ -69,8 +69,8 @@ GRI_GARDEN_CLI__compose_download_url() {
   local uname_arch arch
   uname_arch="$(uname -m)"
   case "${uname_arch}" in
+    aarch64 | arm64) arch="aarch64" ;;
     x86_64) arch="amd64" ;;
-    aarch64) arch="aarch64" ;;
     *) fail "Architecture \"${uname_arch}\" is not yet supported." ;;
   esac
 
@@ -107,7 +107,9 @@ GRI_GARDEN_CLI__download() {
   log_debug
 
   # prepare curl opts
-  local curl_opts=(-fsSL)
+  local curl_opts=(
+    -L #  follow redirects
+  )
   if [ -n "${github_api_token:-}" ]; then
     curl_opts=("${curl_opts[@]}" "-H" "Authorization: token ${github_api_token}")
   fi
