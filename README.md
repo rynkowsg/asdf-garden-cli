@@ -6,7 +6,7 @@
 [![CircleCI Lint Status][ci-circleci-lint-badge]][ci-circleci-lint]
 [![License][license-badge]][license]
 
-[garden-cli][garden-cli-repo] plugin for the CLI tool for [application.garden][application.garden-website].
+[asdf version manager][asdf-website] plugin for [garden-cli][garden-cli-repo], a CLI tool of [application.garden][application.garden-website].
 
 </div>
 
@@ -52,6 +52,7 @@ See [LICENSE](LICENSE) © [Grzegorz Rynkowski][gh-profile-rynkowsg]
 
 [application.garden-docs]: https://docs.apps.garden/
 [application.garden-website]: https://application.garden/
+[asdf-website]: https://asdf-vm.com
 [ci-actions-lint-badge]: https://github.com/rynkowsg/asdf-garden-cli/actions/workflows/lint.yml/badge.svg
 [ci-actions-lint]: https://github.com/rynkowsg/asdf-garden-cli/actions/workflows/lint.yml
 [ci-actions-test-badge]: https://github.com/rynkowsg/asdf-garden-cli/actions/workflows/test.yml/badge.svg
